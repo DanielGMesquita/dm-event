@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Table(name = "activity_table")
+@Table(name = "tb_activity")
 public class Activity {
 
   @Id
@@ -22,7 +22,7 @@ public class Activity {
 
   @ManyToMany
   @JoinTable(
-      name = "activity_attendant",
+      name = "tb_activity_attendant",
       joinColumns = @JoinColumn(name = "activity_id"),
       inverseJoinColumns = @JoinColumn(name = "attendant_id"))
   private Set<Attendant> attendants = new HashSet<>();

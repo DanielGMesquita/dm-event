@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "block_table")
+@Table(name = "tb_block")
 public class Block {
 
   @Id
